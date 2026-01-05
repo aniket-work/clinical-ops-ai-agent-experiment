@@ -51,6 +51,39 @@ flowchart LR
     style Data_Layer fill:#f5f5f5,stroke:#333,stroke-dasharray: 5 5
     style Intelligence_Layer fill:#e3f2fd,stroke:#1565c0
     style Presentation_Layer fill:#fff3e0,stroke:#e65100
+    """,
+    "intro_concept": """
+graph LR
+    A[Manual Data Review] -- "Slow & Error Prone" --> B((Bottleneck))
+    C[AI Watchdog Agent] -- "Real-time Monitoring" --> D((Insights))
+    style B fill:#ffcdd2
+    style D fill:#c8e6c9
+    """,
+    "tech_stack": """
+graph TD
+    subgraph Core
+        P[Python 3.12]
+    end
+    subgraph Data_Processing
+        PD[Pandas]
+    end
+    subgraph Visualization
+        MT[Matplotlib]
+        SN[Seaborn]
+    end
+    subgraph Documentation
+        MJ[Mermaid.js]
+    end
+    P --> PD
+    PD --> MT
+    PD --> SN
+    """,
+    "setup_flow": """
+graph TD
+    Start[Get Code] --> Clone[git clone]
+    Clone --> Venv[Create venv]
+    Venv --> Install[pip install]
+    Install --> Run[python agent.py]
     """
 }
 
