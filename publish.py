@@ -30,24 +30,16 @@ def publish_article():
     # or we can send the raw markdown with frontmatter to the 'body_markdown' field?
     # The simpler way: send body_markdown with frontmatter included, usually works.
     
-    # Let's verify frontmatter has published: true
-    if article_content.get('published') is not True:
-        print("⚠️ 'published: true' not found in frontmatter. Forcing it...")
-        article_content['published'] = True
-    
-    # Re-dump to string to ensure the frontmatter is correct
-    final_markdown = frontmatter.dumps(article_content)
+    # Dev.to API is often more reliable if we send body WITHOUT frontmatter
+    # and metadata as separate fields in the 'article' object.
     
     payload = {
         "article": {
-            "title": article_content['title'],
-            "body_markdown": final_markdown,
+            "title": article_content.get('title', 'ClinicalOps AI Agent Experiment'),
+            "body_markdown": article_content.content, # This is the markdown WITHOUT frontmatter
             "published": True,
             "tags": article_content.get('tags', []),
-            "series": article_content.get('series'),
-            "main_image": article_content.get('cover_image'),
-            "canonical_url": article_content.get('canonical_url'),
-            "description": article_content.get('description')
+            "main_image": article_content.get('cover_image')
         }
     }
 

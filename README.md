@@ -1,6 +1,6 @@
 # ClinicalOps AI Agent
 
-![Title](https://raw.githubusercontent.com/aniket-work/clinical-ops-ai-agent-experiment/main/images/title-diagram.png)
+![Title Animation](https://raw.githubusercontent.com/aniket-work/clinical-ops-ai-agent-experiment/main/images/title-animation.gif)
 
 ## Overview
 The **ClinicalOps AI Agent** is an experimental Proof of Concept (PoC) designed to assist Clinical Operations teams in monitoring ongoing clinical trials. By leveraging a simulated reasoning engine, it interprets natural language queries about patient safety, enrollment progress, and vital signs to generate professional, regulatory-grade visualizations.
@@ -28,6 +28,7 @@ clinical_ops_agent/
 ├── agent.py               # Main agent logic and visualization engine
 ├── data_generator.py      # Generates synthetic clinical trial data
 ├── generate_diagrams.py   # Creates project documentation diagrams
+├── generate_gif.py        # Compiles output charts into an animated GIF
 ├── requirements.txt       # Project dependencies
 ├── output/                # Directory for generated charts
 └── images/                # Directory for documentation assets
@@ -70,14 +71,22 @@ clinical_ops_agent/
     python agent.py
     ```
 
-3.  **Check Output**: View the generated charts in the `output/` directory.
+3.  **Generate GIF**: Create the animated title image.
+    ```bash
+    python generate_gif.py
+    ```
 
-## Sample Output
+## Sample Output Gallery
 
-The agent generates charts such as:
-- **Adverse Event Severity**: A count plot of adverse events by severity.
-- **Enrollment Trend**: A cumulative line chart of patient enrollment.
-- **Vitals Analysis**: A scatter plot of Blood Pressure vs. Age.
+The agent generates regulatory-grade charts such as:
+
+| Enrollment Trend | Adverse Events |
+| :---: | :---: |
+| ![Enrollment](https://raw.githubusercontent.com/aniket-work/clinical-ops-ai-agent-experiment/main/output/enrollment_trend.png) | ![AEs](https://raw.githubusercontent.com/aniket-work/clinical-ops-ai-agent-experiment/main/output/adverse_events.png) |
+
+| Vitals Analysis | Demographics |
+| :---: | :---: |
+| ![Vitals](https://raw.githubusercontent.com/aniket-work/clinical-ops-ai-agent-experiment/main/output/vitals_analysis.png) | ![Demo](https://raw.githubusercontent.com/aniket-work/clinical-ops-ai-agent-experiment/main/output/demographics.png) |
 
 ## License
 MIT

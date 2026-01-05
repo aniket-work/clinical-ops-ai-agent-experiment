@@ -2,13 +2,13 @@
 title: "Building an Autonomous ClinicalOps Watchdog: My Experiment in Automating Clinical Trial Monitoring"
 published: true
 tags: ['python', 'datascience', 'healthcare', 'ai']
-cover_image: "https://raw.githubusercontent.com/aniket-work/clinical-ops-ai-agent-experiment/main/images/title-diagram.png"
+cover_image: "https://raw.githubusercontent.com/aniket-work/clinical-ops-ai-agent-experiment/main/images/title-animation.gif"
 ---
 
 # Building an Autonomous ClinicalOps Watchdog: My Experiment in Automating Clinical Trial Monitoring
 ### How I built a Python agent to solve "Analysis Paralysis" in Clinical Data
 
-![Title Diagram](https://raw.githubusercontent.com/aniket-work/clinical-ops-ai-agent-experiment/main/images/title-diagram.png)
+![Title Animation](https://raw.githubusercontent.com/aniket-work/clinical-ops-ai-agent-experiment/main/images/title-animation.gif)
 
 ## TL;DR
 I built a **ClinicalOps AI Agent** that automates the monitoring of clinical trial data. It takes raw CSV exports of patient vitals and adverse events and turns them into professional safety signals and regulatory-grade charts using a simulated reasoning engine. You can find the full code in my [GitHub Repository](https://github.com/aniket-work/clinical-ops-ai-agent-experiment).
@@ -107,13 +107,27 @@ If you want to run this experiment yourself, I have documented the steps in the 
 3.  **Generate Data**: `python data_generator.py`
 
 ## Let's Run
-Once everything was set up, I ran the agent with a few queries.
+Once everything was set up, I ran the agent with a few queries. 
 
 **Query 1**: "Show me the progress of patient enrollment over time"
 *The agent successfully parsed "enrollment" and "time", generating a cumulative line chart.*
 
+![Enrollment Trend](https://raw.githubusercontent.com/aniket-work/clinical-ops-ai-agent-experiment/main/output/enrollment_trend.png)
+
 **Query 2**: "Analyze the adverse event severity"
 *It produced a clean bar chart showing the distribution of deviations.*
+
+![Adverse Events](https://raw.githubusercontent.com/aniket-work/clinical-ops-ai-agent-experiment/main/output/adverse_events.png)
+
+**Query 3**: "Is there a correlation between age and blood pressure?"
+*I wanted to see if the agent could detect the synthetic trend I injected.*
+
+![Vitals Analysis](https://raw.githubusercontent.com/aniket-work/clinical-ops-ai-agent-experiment/main/output/vitals_analysis.png)
+
+**Query 4**: "Patient Demographics Breakdown"
+*A final look at the study population.*
+
+![Demographics](https://raw.githubusercontent.com/aniket-work/clinical-ops-ai-agent-experiment/main/output/demographics.png)
 
 I was impressed by how quickly a simple script could turn a 500-row CSV into actionable insights.
 
