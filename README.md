@@ -1,6 +1,6 @@
 # ClinicalOps AI Agent
 
-![Title](https://raw.githubusercontent.com/username/repo/main/images/title_diagram.png)
+![Title](https://raw.githubusercontent.com/aniket-work/clinical-ops-ai-agent-experiment/main/images/title-diagram.png)
 
 ## Overview
 The **ClinicalOps AI Agent** is an experimental Proof of Concept (PoC) designed to assist Clinical Operations teams in monitoring ongoing clinical trials. By leveraging a simulated reasoning engine, it interprets natural language queries about patient safety, enrollment progress, and vital signs to generate professional, regulatory-grade visualizations.
@@ -15,7 +15,7 @@ The **ClinicalOps AI Agent** is an experimental Proof of Concept (PoC) designed 
 
 ## Architecture
 
-![Architecture](https://raw.githubusercontent.com/username/repo/main/images/architecture.png)
+![Architecture](https://raw.githubusercontent.com/aniket-work/clinical-ops-ai-agent-experiment/main/images/architecture.png)
 
 The system consists of three main layers:
 1.  **Data Layer**: Handles ingestion of clinical trial datasets (CSV).
@@ -43,7 +43,7 @@ clinical_ops_agent/
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/username/repo.git
+    git clone https://github.com/aniket-work/clinical-ops-ai-agent-experiment.git
     cd clinical_ops_agent
     ```
 
