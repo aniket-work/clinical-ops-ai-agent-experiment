@@ -1,14 +1,14 @@
 ---
 title: "Building an Autonomous ClinicalOps Watchdog: My Experiment in Automating Clinical Trial Monitoring"
 published: true
-tags: ['python', 'datascience', 'healthcare', 'ai', 'automation']
-cover_image: "https://raw.githubusercontent.com/aniket-work/clinical-ops-ai-agent-experiment/main/images/title_diagram.png"
+tags: ['python', 'datascience', 'healthcare', 'ai']
+cover_image: "https://raw.githubusercontent.com/aniket-work/clinical-ops-ai-agent-experiment/main/images/title-diagram.png"
 ---
 
 # Building an Autonomous ClinicalOps Watchdog: My Experiment in Automating Clinical Trial Monitoring
 ### How I built a Python agent to solve "Analysis Paralysis" in Clinical Data
 
-![Title Diagram](https://raw.githubusercontent.com/aniket-work/clinical-ops-ai-agent-experiment/main/images/title_diagram.png)
+![Title Diagram](https://raw.githubusercontent.com/aniket-work/clinical-ops-ai-agent-experiment/main/images/title-diagram.png)
 
 ## TL;DR
 I built a **ClinicalOps AI Agent** that automates the monitoring of clinical trial data. It takes raw CSV exports of patient vitals and adverse events and turns them into professional safety signals and regulatory-grade charts using a simulated reasoning engine. You can find the full code in my [GitHub Repository](https://github.com/aniket-work/clinical-ops-ai-agent-experiment).
